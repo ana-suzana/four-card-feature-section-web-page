@@ -1,0 +1,114 @@
+* {
+    font-family: "Poppins", serif;
+    box-sizing: border-box;/* define que a largura e altura dos elementos incluem o preenchimento e a borda, garantindo um dimensionamento mais previsível e evitando que elementos se expandam além do esperado*/
+}
+
+body {
+    width: 100%;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    background-color: hsl(0, 0%, 100%);
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Remove estilos padrão de títulos */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;/*Faz com que o tamanho da fonte dos títulos herde do elemento pai, em vez de seguir tamanhos pré-definidos pelo navegador.*/
+    font-weight: inherit;/*Remove a negrito padrão de títulos, herdando o peso da fonte do elemento pai.*/
+}
+
+.escrita{
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.escrita .escrita__title{
+    display: flex;
+    flex-direction: column;
+    font-size: 28px;
+}
+.escrita .escrita__title .escrita__title__first{
+    font-weight: 200;
+}
+.escrita .escrita__title .escrita__title__second{
+    font-weight: 600;
+}
+.escrita .escrita__subtitle{
+    width: 60%;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.box-content{
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 200px); /* 2 linhas cada */
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.box-content h2{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.box-content .box-content__boxes{
+    width: 95%;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 2px hsla(234, 12%, 34%, 0.158);
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+.box-content .box-content__supervisor{
+    border-top: 5px solid hsl(180, 62%, 55%);
+    grid-column: 1; /*diz qual coluna ele deve ser posicionado*/
+    grid-row: span 2; /* Ocupa duas linhas */
+}
+.box-content .box-content__Team-Builder{
+    border-top: 5px solid hsl(0, 78%, 62%);
+    grid-column: 2;
+    grid-row: 1;
+}
+.box-content .box-content__karma{
+    border-top: 5px solid hsl(34, 97%, 64%);
+    grid-column: 2;
+    grid-row: 2;
+}
+.box-content .box-content__calculator{
+    border-top: 5px solid hsl(212, 86%, 64%);
+    grid-column: 3;
+    grid-row: span 2; /* Ocupa duas linhas */
+}
+.box-content .box-content__icon{
+    width: 50px;
+    position: relative;
+    left: 0;
+}
+
+.attribution{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.attribution a:hover{
+    font-size: 16px;
+    color: brown;
+}
