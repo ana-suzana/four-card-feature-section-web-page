@@ -10,6 +10,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 15px;
 }
 
 main{
@@ -71,37 +72,46 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 5px;
 }
 .box-content .box-content__boxes{
+    position: relative;
     width: 95%;
     border-radius: 5px;
     box-shadow: 0 2px 5px 2px hsla(234, 12%, 34%, 0.158);
     display: flex;
     flex-direction: column;
     padding: 25px;
+    height: 200px;
 }
 .box-content .box-content__supervisor{
+    position: relative;
     border-top: 5px solid hsl(180, 62%, 55%);
     grid-column: 1; /*diz qual coluna ele deve ser posicionado*/
     grid-row: span 2; /* Ocupa duas linhas */
 }
 .box-content .box-content__Team-Builder{
+    position: relative; /*Torna essa div o ponto de referência para posicionamento.*/
     border-top: 5px solid hsl(0, 78%, 62%);
     grid-column: 2;
     grid-row: 1;
+
 }
 .box-content .box-content__karma{
+    position: relative;
     border-top: 5px solid hsl(34, 97%, 64%);
     grid-column: 2;
     grid-row: 2;
 }
 .box-content .box-content__calculator{
+    position: relative;
     border-top: 5px solid hsl(212, 86%, 64%);
     grid-column: 3;
     grid-row: span 2; /* Ocupa duas linhas */
 }
 .box-content .box-content__icon{
     width: 50px;
-    position: relative;
-    left: 0;
+    position: absolute;
+    bottom: 25px; /* Fixa no fundo */
+    right: 25px; /* Fixa na esquerda */
+    display: block; /* Garante que não seja inline */
 }
 
 .attribution{
