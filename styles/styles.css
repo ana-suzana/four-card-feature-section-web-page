@@ -2,7 +2,6 @@
     font-family: "Poppins", serif;
     box-sizing: border-box;/* define que a largura e altura dos elementos incluem o preenchimento e a borda, garantindo um dimensionamento mais previsível e evitando que elementos se expandam além do esperado*/
 }
-
 body {
     width: 100%;
     margin-top: 0px;
@@ -12,7 +11,6 @@ body {
     align-items: center;
     font-size: 15px;
 }
-
 main{
     background-color: hsl(0, 0%, 100%);
     padding: 15px;
@@ -31,13 +29,13 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: inherit;/*Remove a negrito padrão de títulos, herdando o peso da fonte do elemento pai.*/
 }
 
+/*section 1*/
 .escrita{
     margin: 40px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .escrita .escrita__title{
     display: flex;
     flex-direction: column;
@@ -56,6 +54,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 5px;
 }
 
+/*section 2*/
 .box-content{
     width: 85%;
     display: grid;
@@ -65,7 +64,6 @@ h1, h2, h3, h4, h5, h6 {
     justify-items: center;
     align-items: center;
 }
-
 .box-content h2{
     font-size: 18px;
     font-weight: 600;
@@ -82,26 +80,21 @@ h1, h2, h3, h4, h5, h6 {
     height: 200px;
 }
 .box-content .box-content__supervisor{
-    position: relative;
     border-top: 5px solid hsl(180, 62%, 55%);
     grid-column: 1; /*diz qual coluna ele deve ser posicionado*/
     grid-row: span 2; /* Ocupa duas linhas */
 }
-.box-content .box-content__Team-Builder{
-    position: relative; /*Torna essa div o ponto de referência para posicionamento.*/
+.box-content .box-content__Team-Builder{ /*Torna essa div o ponto de referência para posicionamento.*/
     border-top: 5px solid hsl(0, 78%, 62%);
     grid-column: 2;
     grid-row: 1;
-
 }
 .box-content .box-content__karma{
-    position: relative;
     border-top: 5px solid hsl(34, 97%, 64%);
     grid-column: 2;
     grid-row: 2;
 }
 .box-content .box-content__calculator{
-    position: relative;
     border-top: 5px solid hsl(212, 86%, 64%);
     grid-column: 3;
     grid-row: span 2; /* Ocupa duas linhas */
@@ -109,11 +102,11 @@ h1, h2, h3, h4, h5, h6 {
 .box-content .box-content__icon{
     width: 50px;
     position: absolute;
-    bottom: 25px; /* Fixa no fundo */
-    right: 25px; /* Fixa na esquerda */
-    display: block; /* Garante que não seja inline */
+    bottom: 25px; 
+    right: 25px; 
 }
 
+/*RODAPÉ*/
 .attribution{
     font-size: 14px;
     margin-bottom: 5px;

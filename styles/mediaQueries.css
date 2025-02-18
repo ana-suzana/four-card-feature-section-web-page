@@ -1,0 +1,42 @@
+@media (max-width: 1000px) {/*para telas de no máximo 1000px de largura, os blocos são organizados em duas colunas*/
+    .box-content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .box-content .box-content__supervisor{
+        grid-column: 1; 
+        grid-row: 1; 
+    }
+    .box-content .box-content__Team-Builder{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .box-content .box-content__karma{
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .box-content .box-content__calculator{
+        grid-column: 2;
+        grid-row: 2;
+    }
+}
+
+@media (max-width: 670px){/*diminui tamanho dos icones*/
+    .box-content .box-content__icon{
+        width: 40px;
+        z-index: 0;
+    }
+}
+
+@media (max-width: 500px){
+    main{
+        padding: 25px;
+    }
+    .box-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .box-content .box-content__boxes{
+        height: 200px;
+        margin-bottom: 10px;
+    }
+}
