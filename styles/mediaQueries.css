@@ -34,9 +34,11 @@
     .box-content{
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
     .box-content .box-content__boxes{
         height: 200px;
         margin-bottom: 10px;
+        width: 100%;
     }
 }

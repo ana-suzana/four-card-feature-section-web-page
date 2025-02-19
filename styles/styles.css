@@ -40,6 +40,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     font-size: 28px;
+    text-align: center;
 }
 .escrita .escrita__title .escrita__title__first{
     font-weight: 200;
