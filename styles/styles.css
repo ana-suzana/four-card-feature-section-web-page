@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
     grid-column: 1; /*diz qual coluna ele deve ser posicionado*/
     grid-row: span 2; /* Ocupa duas linhas */
 }
-.box-content .box-content__Team-Builder{ /*Torna essa div o ponto de referência para posicionamento.*/
+.box-content .box-content__Team-Builder{ 
     border-top: 5px solid hsl(0, 78%, 62%);
     grid-column: 2;
     grid-row: 1;
