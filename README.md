@@ -25,8 +25,6 @@ Users should be able to:
 
 ![alt text](image.png)
 
-This is a screenshot of my solution. 
-
 ### Links
 
 - Solution URL: [https://www.frontendmentor.io/solutions/responsive-web-page-with-css-grid-5QbpyhYf6Z](https://www.frontendmentor.io/solutions/responsive-web-page-with-css-grid-5QbpyhYf6Z)
