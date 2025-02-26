@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 85%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 200px); /* 2 linhas cada */
+    grid-template-rows: repeat(2, 250px); /* 2 linhas cada */
     gap: 10px;
     justify-items: center;
     align-items: center;
@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     padding: 25px;
-    height: 200px;
+    height: 230px;
 }
 .box-content .box-content__supervisor{
     border-top: 5px solid hsl(180, 62%, 55%);
@@ -104,11 +104,14 @@ h1, h2, h3, h4, h5, h6 {
 .box-content .box-content__icon{
     width: 50px;
     position: absolute;
-    bottom: 25px; 
+    bottom: 35px; 
     right: 25px; 
 }
 
 /*RODAPÉ*/
+footer{
+    margin-bottom: 5px;
+}
 .attribution{
     font-size: 14px;
     margin-bottom: 5px;
