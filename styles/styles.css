@@ -3,6 +3,7 @@
     box-sizing: border-box;/* define que a largura e altura dos elementos incluem o preenchimento e a borda, garantindo um dimensionamento mais previsível e evitando que elementos se expandam além do esperado*/
 }
 body {
+    background-color: #FAFAFA;
     width: 100%;
     margin-top: 0px;
     display: flex;
@@ -12,7 +13,6 @@ body {
     font-size: 15px;
 }
 main{
-    background-color: hsl(0, 0%, 100%);
     padding: 15px;
     width: 100%;
     display: flex;
