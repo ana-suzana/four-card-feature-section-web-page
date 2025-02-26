@@ -11,6 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 15px;
+    color: hsl(234, 12%, 34%);
 }
 main{
     padding: 15px;
@@ -64,11 +65,13 @@ h1, h2, h3, h4, h5, h6 {
     gap: 10px;
     justify-items: center;
     align-items: center;
+    color: hsl(212, 6%, 44%);
 }
 .box-content h2{
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 5px;
+    color: hsl(234, 12%, 34%);
 }
 .box-content .box-content__boxes{
     background-color: hsl(0, 0%, 100%);
@@ -115,6 +118,7 @@ footer{
 .attribution{
     font-size: 14px;
     margin-bottom: 5px;
+    text-align: center;
 }
 .attribution a:hover{
     font-size: 16px;
